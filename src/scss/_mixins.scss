@@ -1,11 +1,18 @@
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin flex-center($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
 }
 
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
+@mixin image($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+// @mixin border-radius($radius) {
+//     -webkit-border-radius: $radius;
+//     -moz-border-radius: $radius;
+//     border-radius: $radius;
+// }

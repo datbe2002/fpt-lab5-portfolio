@@ -1,13 +1,18 @@
+@import './mixins';
+@import './variables';
+
+
 html,
 body {
-    width: 100%;
-    min-height: 100vh;
+    width: $fullWidth;
+    min-height: $height-vh100;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     line-height: 2em;
     scroll-behavior: smooth;
+    background-color: $primary-color;
 }
 
 
@@ -16,65 +21,71 @@ body {
 //Navbar section
 //--------------------------------------------
 .page-wrapper {
-    width: 100%;
+    width: $fullWidth;
     height: auto;
+    opacity: 0.9;
+
+    .nav-wrapper {
+        width: $fullWidth;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: $color;
+
+        .grad-bar {
+            width: $fullWidth;
+            height: 5px;
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 400% 400%;
+            -webkit-animation: gradbar 15s ease infinite;
+            -moz-animation: gradbar 15s ease infinite;
+            animation: gradbar 15s ease infinite;
+        }
+    }
+
 }
 
-.nav-wrapper {
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-}
 
-.grad-bar {
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 400% 400%;
-    -webkit-animation: gradbar 15s ease infinite;
-    -moz-animation: gradbar 15s ease infinite;
-    animation: gradbar 15s ease infinite;
-}
+
+
 
 .navbar {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    align-items: center;
-    height: 50px;
-    overflow: hidden;
-    background-color: #E7E9EB;
-    padding-bottom: 20px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
-    img {
-        height: 40px;
-        width: auto;
-        justify-self: start;
-        margin-left: 20px;
-    }
+    @include flex-center(flex, center, center);
+    height: 80px;
+    padding-top: 20px;
+    overflow: hidden;
+    background-color: $primary-color;
+    padding-bottom: 20px;
 
     ul {
         list-style: none;
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        justify-self: flex-end;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex-center(flex, center, center);
+
+        font-size: 20px;
     }
-}
 
-.nav-item {
-    a {
-        color: #000;
-        font-size: 0.9rem;
-        font-weight: 400;
-        text-decoration: none;
-        transition: color 0.3s ease-out;
+    .nav-item {
+        a {
+            color: #000;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease-out;
 
-        &:hover {
-            color: #3498db;
+            &:hover {
+                color: #ad6b38;
+            }
         }
     }
+
 }
+
 
 /* KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
@@ -185,17 +196,20 @@ body {
 
     .navbar {
         ul {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // justify-content: start;
+
+            @include flex-center(flex, none, start);
             position: fixed;
-            justify-content: start;
+            flex-direction: column;
             top: 55px;
-            background-color: #fff;
-            width: 100%;
-            height: calc(100vh - 55px);
+            background-color: $color;
+            width: $fullWidth;
+            height: calc($height-vh100 - 55px);
             transform: translate(-101%);
-            text-align: center;
             overflow: hidden;
+            text-align: center;
+
         }
 
         li {
@@ -232,24 +246,25 @@ body {
 
 #header {
     background: url("../images/avatar.jpg") repeat scroll center center / cover;
-    height: 100vh;
-    width: 100%;
+    height: $height-vh100;
+    width: $fullWidth;
 
     .header-content {
-        height: 100vh;
         text-align: left;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        @include flex-center(flex, none, center);
         flex-direction: column;
         padding-left: 10rem;
+        width: $fullWidth;
+        height: $height-vh100;
 
         h1 {
             font-size: 40px;
             font-weight: 700;
             margin-bottom: 10px;
             text-transform: uppercase;
-            color: #fff;
+            color: $color;
         }
 
         p {
@@ -258,7 +273,7 @@ body {
             margin-top: 0;
             margin-bottom: 30px;
             text-transform: capitalize;
-            color: #fff;
+            color: $color;
             font-weight: 500;
         }
 
@@ -268,7 +283,7 @@ body {
                 margin-right: 20px;
 
                 i {
-                    color: #fff;
+                    color: $color;
                     font-size: 15px;
                 }
             }
@@ -287,18 +302,21 @@ body {
     /*Make the grid smaller than the container*/
     gap: 1rem;
     padding: 1rem;
-    height: 100vh;
+    height: $height-vh100;
 
     .con_left {
-        background-color: #23D5AB;
+        @include image("http://uyenuong.net/wp-content/uploads/2022/05/nen-chill2B2528202529.jpg");
 
-        background-image: url("http://uyenuong.net/wp-content/uploads/2022/05/nen-chill2B2528202529.jpg");
+        //background-image: url("http://uyenuong.net/wp-content/uploads/2022/05/nen-chill2B2528202529.jpg");
+        // background-position: center center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
 
         .con_content {
-            height: 100vh;
+            height: $height-vh100;
 
             text-align: left;
-            padding: 0;
+            padding-left: 1rem;
             color: white;
             backdrop-filter: blur(5px);
 
@@ -315,15 +333,16 @@ body {
     }
 
     .con_middle {
-        color: white;
-        background-image: url("https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-07/code-2434271_1280%20Cropped.jpg?itok=6q3NFCUr");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        color: $color;
+        // background-image: url("https://cdn.pixabay.com/photo/2013/11/16/14/08/clouds-211565_960_720.jpg");
+        // background-position: center center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
 
+        @include image("https://cdn.pixabay.com/photo/2013/11/16/14/08/clouds-211565_960_720.jpg");
 
         .con_content2 {
-            height: 100vh;
+            height: $height-vh100;
             backdrop-filter: blur(8px);
 
             .col {}
@@ -332,23 +351,26 @@ body {
     }
 
     .con_right {
-        color: white;
-        background-image: url("https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-07/code-2434271_1280%20Cropped.jpg?itok=6q3NFCUr");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        color: $color;
+        // background-image: url("https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-07/code-2434271_1280%20Cropped.jpg?itok=6q3NFCUr");
+        // background-position: center center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        @include image("https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-07/code-2434271_1280%20Cropped.jpg?itok=6q3NFCUr");
+
         padding-left: 500px;
     }
 }
 
-.contact {
-    height: 100vh;
-}
+#contact {}
 
 footer {
+    display: flex;
     text-align: center;
+    @include flex-center(flex, none, none);
     padding: 3px;
-    background-color: #E7E9EB;
-    color: black;
+    background-color: $primary-color;
+    color: $black;
     font-weight: 600;
+    border-top: 1px solid $dark-gray;
 }

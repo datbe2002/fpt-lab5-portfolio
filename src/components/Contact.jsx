@@ -14,7 +14,7 @@ export default function Contact() {
     <div
       id="contact"
       align="center"
-      style={{ marginTop: "5rem", height: "90vh" }}
+      style={{ marginTop: "10rem", height: "90vh" }}
     >
       <h3>CONTACT ME</h3>
       <div>
@@ -40,7 +40,7 @@ export default function Contact() {
           />
         </a>
       </div>
-      <Container style={{ backgroundColor: "#E7E9EB", padding: "2rem 2rem", borderRadius: "15px" }}>
+      <Container style={{ backgroundColor: "#E7E9EB", padding: "2rem 10rem", borderRadius: "15px" }}>
         <h5>If you have any problem dont be shine to contact me</h5>
         <h5>Fill your information here</h5>
         <form onSubmit={handleSubmit}>

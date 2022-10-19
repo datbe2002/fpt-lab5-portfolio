@@ -6,7 +6,6 @@ export default function NavBar() {
             <div class="nav-wrapper">
                 <div class="grad-bar"></div>
                 <nav class="navbar">
-                    <img src="https://random.imagecdn.app/500/200" alt="Company Logo" />
                     <div class="menu-toggle" id="mobile-menu">
                         <span class="bar"></span>
                         <span class="bar"></span>

@@ -19,13 +19,13 @@ export default function About() {
                     <table><tr><td valign="top" >
 
                         <div className='col' align="center">
-                            <a href="https://reactjs.org/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" /></a>
-                            <a href="https://getbootstrap.com/docs/3.4/javascript/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" /></a>
-                            <a href="https://www.w3schools.com/css/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" /></a>
-                            <a href="https://en.wikipedia.org/wiki/HTML5" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" /></a>
-                            <a href="https://www.javascript.com/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" /></a>
-                            <a href="https://redux.js.org/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" alt="Redux" /></a>
-                            <a href="https://mui.com/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/mui.png" alt="Material UI" /></a>
+                            <a href="https://reactjs.org/" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" /></a>
+                            <a href="https://getbootstrap.com/docs/3.4/javascript/" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" /></a>
+                            <a href="https://www.w3schools.com/css/" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" /></a>
+                            <a href="https://en.wikipedia.org/wiki/HTML5" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" /></a>
+                            <a href="https://www.javascript.com/" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" /></a>
+                            <a href="https://redux.js.org/" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" alt="Redux" /></a>
+                            <a href="https://mui.com/" ><img style={{ margin: "10px", height: "100px" }} src="https://profilinator.rishav.dev/skills-assets/mui.png" alt="Material UI" /></a>
                         </div>
 
                     </td><td valign="top" >
@@ -34,11 +34,11 @@ export default function About() {
 
 
                             <div className='col' align="center">
-                                <a href="https://www.javascript.com/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" /></a>
-                                <a href="https://nodejs.org/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" /></a>
-                                <a href="https://expressjs.com/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" /></a>
-                                <a href="https://github.com/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" /></a>
-                                <a href="https://www.java.com/" ><img style={{ margin: "10px", height: "50px" }} src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" /></a>
+                                <a href="https://www.javascript.com/" ><img style={{ margin: "10px", height: "80px" }} src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" /></a>
+                                <a href="https://nodejs.org/" ><img style={{ margin: "10px", height: "80px" }} src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" /></a>
+                                <a href="https://expressjs.com/" ><img style={{ margin: "10px", height: "80px" }} src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" /></a>
+                                <a href="https://github.com/" ><img style={{ margin: "10px", height: "80px" }} src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" /></a>
+                                <a href="https://www.java.com/" ><img style={{ margin: "10px", height: "80px" }} src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" /></a>
                             </div>
 
 
