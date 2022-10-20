@@ -307,14 +307,8 @@ body {
     .con_left {
         @include image("http://uyenuong.net/wp-content/uploads/2022/05/nen-chill2B2528202529.jpg");
 
-        //background-image: url("http://uyenuong.net/wp-content/uploads/2022/05/nen-chill2B2528202529.jpg");
-        // background-position: center center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-
         .con_content {
             height: $height-vh100;
-
             text-align: left;
             padding-left: 1rem;
             color: white;
@@ -334,30 +328,17 @@ body {
 
     .con_middle {
         color: $color;
-        // background-image: url("https://cdn.pixabay.com/photo/2013/11/16/14/08/clouds-211565_960_720.jpg");
-        // background-position: center center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-
         @include image("https://cdn.pixabay.com/photo/2013/11/16/14/08/clouds-211565_960_720.jpg");
 
         .con_content2 {
             height: $height-vh100;
             backdrop-filter: blur(8px);
-
-            .col {}
-
         }
     }
 
     .con_right {
         color: $color;
-        // background-image: url("https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-07/code-2434271_1280%20Cropped.jpg?itok=6q3NFCUr");
-        // background-position: center center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
         @include image("https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-07/code-2434271_1280%20Cropped.jpg?itok=6q3NFCUr");
-
         padding-left: 500px;
     }
 }
